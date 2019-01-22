@@ -1,9 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+      <title>Knuts Kitchen</title>
+      <meta charset="UTF-8"/>
     </head>
     <body>
-        <h1>Hello World!!!</h1>
+      <main>
+        <h1>Welcome to Knuts!</h1>
+        <section>
+          <h2>Select Burger:</h2>
+          <table>
+            <thead align="center">
+              <tr>
+                <td><h3>The Vegan Way</h3></td>
+                <td><h3>Classic Cheeseburger</h3></td>
+                <td><h3>Jalapeño Journey</h3></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="center">
+                <td><img src="https://www.contentednesscooking.com/wp-content/uploads/2015/10/Vegan-Lentil-Burger_7-1.jpg" alt="Span" title="Image stolen online" width="300" height="300"></td>
+                <td><img src="https://images-gmi-pmc.edge-generalmills.com/d657497e-4c20-4f87-bd12-4cde1502ccae.jpg" alt="Span" title="Image stolen online" width="300" height="300"></td>
+                <td><img src="https://3.bp.blogspot.com/-2Q1EUuvCtGw/V0cfp0I9SsI/AAAAAAAAvTQ/xoazc3L7jL4E6b2JBMndvGPJ9b_At73iQCLcB/s1600/Carls-Jr-California-Classic-Burger.jpg" alt="Span" title="Image stolen online" width="300" height="300"></td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Delicious vegan burger made of beets.</li>
+                    <li>Ruccola, red onion, vegan cheese, tomatoes.</li>
+                    <li>Contains gluten.</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Hot burger with spicy jalapeños.</li>
+                    <li>Cheese, jalapeños.</li>
+                    <li>Contains lactose and gluten.</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>A classic cheeseburger. Exactly what you would expect.</li>
+                    <li>Cheese, lettuce, tomatoes.</li>
+                    <li>Contains lactose and gluten.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="contact">
+          <h2>Order information:</h2>
+          <div>This is where you provide necessary information for us to complete your order.</div>
+          <h3>Delivery information</h3>
+          <form>
+            <p>
+              <label for="fullname">Full name</label><br>
+              <input type="text" id="fullname" name="name" required="required" placeholder="First and last name">
+            </p>
+            <p>
+              <label for="email">Email address</label><br>
+              <input type="email" id="email" name="em" required="required" placehodler="your@email.address.com">
+            </p>
+            <p>
+              <label for="street">Street</label><br>
+              <input type="text" id="street" name="st" required="required" placeholder="Street">
+            </p>
+            <p>
+              <label for="housenumber">Address</label><br>
+              <input type="text" id="housenumber" name="hn" required="required" placeholder="House number">
+            </p>
+            <p>
+              <label for="payment">Payment method</label><br>
+              <select id="payment" name="pay">
+                <option>Mastercard</option>
+                <option>Visa</option>
+                <option>Swish</option>
+              </select>
+            </p>
+            <p>
+              <input type="radio" name="gender" value="female">Female<br>
+              <input type="radio" name="gender" value="male">Male<br>
+              <input type="radio" name="gender" value="no">No gender<br>
+              <input type="radio" name="gender" value="none">Do not wish to specify
+            </p>
+          </form>
+          <button type="submit"><img src="http://paperwritings.us/wp-content/uploads/2016/06/ORDER-NOW-LIME-GREEN-BUTTON.jpg" alt="Span" title="Image stolen" width="100" heigth="100"></button>
+        </section>
+      </main>
     </body>
 </html>
