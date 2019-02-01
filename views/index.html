@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <title>Knuts Kitchen</title>
+      <title>Adventurous Burgers</title>
       <meta charset="UTF-8"/>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
       <main>
-        <h1>Welcome to Knuts!</h1>
-        <section>
-          <h2>Select Burger:</h2>
-          <table>
-            <thead align="center">
-              <tr>
-                <td><h3>The Vegan Way</h3></td>
-                <td><h3>Classic Cheeseburger</h3></td>
-                <td><h3>Jalapeño Journey</h3></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr align="center">
-                <td><img src="https://www.contentednesscooking.com/wp-content/uploads/2015/10/Vegan-Lentil-Burger_7-1.jpg" alt="Span" title="Image stolen online" width="300" height="300"></td>
-                <td><img src="https://images-gmi-pmc.edge-generalmills.com/d657497e-4c20-4f87-bd12-4cde1502ccae.jpg" alt="Span" title="Image stolen online" width="300" height="300"></td>
-                <td><img src="https://3.bp.blogspot.com/-2Q1EUuvCtGw/V0cfp0I9SsI/AAAAAAAAvTQ/xoazc3L7jL4E6b2JBMndvGPJ9b_At73iQCLcB/s1600/Carls-Jr-California-Classic-Burger.jpg" alt="Span" title="Image stolen online" width="300" height="300"></td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>Delicious vegan burger made of beets.</li>
-                    <li>Ruccola, red onion, vegan cheese, tomatoes.</li>
-                    <li>Contains gluten.</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Hot burger with spicy jalapeños.</li>
-                    <li>Cheese, jalapeños.</li>
-                    <li>Contains lactose and gluten.</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>A classic cheeseburger. Exactly what you would expect.</li>
-                    <li>Cheese, lettuce, tomatoes.</li>
-                    <li>Contains lactose and gluten.</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <section class="header">
+          <img src="https://ak7.picdn.net/shutterstock/videos/24512267/thumb/6.jpg?i10c=img.resize(height:160)" alt="Span" title="Image stolen online">
+          <h1 id="title">Adventurouso Burgers</h1>
+          <ul id="tabsheader">
+            <li><a href="broken link">Order</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="about.html">About us</a></li>
+          </ul>
+        </section>
+        <section id="selectburger">
+          <h2 id="sbheader">Pick an adventure:</h2>
+          <div class="wrapper">
+            <div class="box a">
+              <h3>The Vegan Way</h3>
+              <img src="https://www.contentednesscooking.com/wp-content/uploads/2015/10/Vegan-Lentil-Burger_7-1.jpg" alt="Span" title="Image stolen online">
+              <ul>
+                <li>Delicious vegan burger made of beets.</li>
+                <li>Ruccola, red onion, vegan cheese, tomatoes.</li>
+                <li>Contains gluten.</li>
+              </ul>
+            </div>
+            <div class="box b">
+              <h3>Jalapeño Journey</h3>
+              <img src="https://3.bp.blogspot.com/-2Q1EUuvCtGw/V0cfp0I9SsI/AAAAAAAAvTQ/xoazc3L7jL4E6b2JBMndvGPJ9b_At73iQCLcB/s1600/Carls-Jr-California-Classic-Burger.jpg" alt="Span" title="Image stolen online">
+              <ul>
+                <li>Hot burger with spicy jalapeños.</li>
+                <li>Cheese, jalapeños.</li>
+                <li>Contains lactose and gluten.</li>
+              </ul>
+            </div>
+            <div class="box c">
+              <h3>Safety Burger</h3>
+              <img src="https://images-gmi-pmc.edge-generalmills.com/d657497e-4c20-4f87-bd12-4cde1502ccae.jpg" alt="Span" title="Image stolen online">
+              <ul>
+                <li>A classic cheeseburger for the tired adventurer.</li>
+                <li>Cheese, lettuce, tomatoes.</li>
+                <li>Contains lactose and gluten.</li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section id="contact">
           <h2>Order information:</h2>
@@ -85,7 +85,12 @@
               <input type="radio" name="gender" value="none">Do not wish to specify
             </p>
           </form>
-          <button type="submit"><img src="http://paperwritings.us/wp-content/uploads/2016/06/ORDER-NOW-LIME-GREEN-BUTTON.jpg" alt="Span" title="Image stolen" width="100" heigth="100"></button>
+          <button type="submit">Submit order</button>
+        </section>
+        <section id="bottomheader">
+          <div>
+            <p>Continue the adventure on our <a href="https://www.facebook.com/"><img src="http://www.opptrends.com/wp-content/uploads/2013/10/Facebook-e1397105127200.png"> facebook page</a>!
+          </div>
         </section>
       </main>
     </body>

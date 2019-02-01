@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Share+Tech+Mono");
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia");
+
+body {
+    font-family: arial;
+    font-size: 1vw;
+    background-color: maroon;
+}
+
+.header {
+    position: relative;
+    
+    font-family: arial;
+    font-size: 2vw;
+    background-image: linear-gradient(red, yellow);
+    color: black;
+    padding-right: 1em;
+    padding-bottom: 1vw;
+
+    height: 15vw;
+    max-width: 100%;
+}
+
+.header img {
+    opacity: 1;
+    position: absolute;
+    top: .5vw;
+    left: 1%;
+    width: 98%;
+    height: 15vw;
+}
+
+#title {
+    padding: 1%;
+    padding-left: 2%;
+    font-family: UnifrakturMaguntia;
+    font-size: 8vw;
+    position: absolute;
+}
+
+#tabsheader {
+    position: absolute;
+    bottom: .5vw;
+    list-style-type: none;
+    background-color: darkred;
+    
+    color: white;
+    
+    border: 2px solid black;
+    margin-left: 1%;
+}
+
+#tabsheader li {
+    float: left;
+}
+
+#tabsheader li a {
+    display: block;
+    text-align: center;
+    padding: .5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+#tabsheader li a:hover {
+    background-color: red;
+}
+
+#selectburger {
+    background-image: linear-gradient(yellow, orangered);
+    color: black;
+    padding: .5em;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: .5%;
+    grid-template-columns: 33% 33% 33%;
+    border: .5em solid black;
+    background-color: black;
+    color: white;
+}
+
+.box {
+    background-color: red;
+    color: black;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.box h3 {
+    font-size: 3vw;
+}
+
+.box ul li {
+    font-size: 67%;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.a {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    margin: .2em;
+    padding: 1em;
+}
+
+.b {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin: .2em;
+    padding: 1em;
+}
+
+.c {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    margin: .2em;
+    padding: 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding-right: 1em;
+        padding-bottom: 1vh;
+
+        height: 15vh;
+        max-width: 100%;
+    }
+
+    .header img {
+        top: .5vh;
+        width: 98%;
+        height: 15vh;
+    }
+
+    #tabsheader {
+        bottom: .5vh;
+    }
+    
+    .wrapper {
+        grid-template-columns: 100%;
+    }
+
+    .box {
+        font-size: 3vh;
+    }
+
+    .box h3 {
+        font-size: 5vh;
+    }
+
+    .a {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .b {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .c {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #contact {
+        font-size: 2vh;
+    }
+
+    #contact h2 {
+        font-size: 3vh;
+    }
+
+    #contact h3 {
+        font-size: 2.5vh;
+    }
+}
+
+#contact {
+    background-color: black;
+    color: darkgrey;
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    border: 5px;
+    border-style: dotted;
+    border-color: yellow;
+}
+
+#contact h2 {
+    font-size: 3vw;
+}
+
+#contact h3 {
+    font-family: arial;
+    font-size: 2vw;
+}
+
+#sbheader {
+    font-size: 3vw;
+    padding-top: .5em;
+    padding-left: .5em;
+}
+
+#burgerheaders {
+    text-decoration: underline;
+}
+
+#bottomheader {
+    background-image: linear-gradient(orangered, yellow);
+    font-size: 1vw;
+}
+
+#bottomheader p {
+    font-size: 1.5vw;
+    padding: 2%;
+}
+
+#bottomheader a {
+    text-decoration: none;
+}
+
+#bottomheader img {
+    width: 1em;
+    height: 1em;
+}
+
+#contactlist {
+    list-style-type: none;
+}
+
+#contactlist td {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2em;
+}
+
+table td {
+}
+
+ul {
+    list-style-type: initial;
+}
+
+ul li {
+    font-style: italic;
+}
+
+button {
+    height: 2em;
+    width:  10em;
+    background-color: greenyellow;
+}
+
+button:hover {
+    background-color: green;
+}
+
+input[type="radio"] {
+    height: .7em;
+    width:  .7em;
+}
+
+body {
+    line-height: 1.5;
+    font-style: arial;
+    font-size: 1.5vw;
+    margin: 5%;
+}
+
+h1 {
+    
+}
+
+h2 {
+    font-family: arial;
+    font-weight: bold;
+    fond-size: 4vw;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: UnifrakturMaguntia;
+    fond-size: 3vw;
+    font-weight: bold;
+}
+
+h4 {
+    
+}
+
+h5 {
+    
+}
+
+#aboutus {
+    background-color: yellow;
+    color: black;
+
+    padding: 1em;
+}
+
+#mission {
+    background-color: yellow;
+    color: black;
+
+    padding: 1em;
+}
+
+.dualwrapper {
+    display: grid;
+    grid-gap: .5%;
+    grid-template-columns: 66% 33%;
+}
+
+#aboutus .box {
+}
+
+#aboutus .box img {
+    overflow: hidden;
+}
+
+#mission .dualwrapper {
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+}
+
+#mission .x {
+    margin: 0;
+}
+
+#mission .y {
+    margin: 0;
+}
+
+.x {
+    grid-column: 1;
+    grid-row: 1;
+    margin: .2em;
+    padding: 1em;
+}
+
+.y {
+    grid-column: 2;
+    grid-row: 1;
+    margin: .2em;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
