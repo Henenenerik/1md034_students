@@ -5,12 +5,16 @@
       <meta charset="UTF-8"/>
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/menu.js"></script>
+      <script src="js/js_script.js" defer></script>
+      <script src="https://vuejs.org/js/vue.js"></script>
+      <script src="js/vue_script.js" defer></script>
     </head>
     <body>
       <main>
         <section class="header">
           <img src="https://ak7.picdn.net/shutterstock/videos/24512267/thumb/6.jpg?i10c=img.resize(height:160)" alt="Span" title="Image stolen online">
-          <h1 id="title">Adventurouso Burgers</h1>
+          <h1 id="title">Adventurous Burgers</h1>
           <ul id="tabsheader">
             <li><a href="broken link">Order</a></li>
             <li><a href="mission.html">Our Mission</a></li>
@@ -21,39 +25,25 @@
           <h2 id="sbheader">Pick an adventure:</h2>
           <div class="wrapper">
             <div class="box a">
-              <h3>The Vegan Way</h3>
-              <img src="https://www.contentednesscooking.com/wp-content/uploads/2015/10/Vegan-Lentil-Burger_7-1.jpg" alt="Span" title="Image stolen online">
-              <ul>
-                <li>Delicious vegan burger made of beets.</li>
-                <li>Ruccola, red onion, vegan cheese, tomatoes.</li>
-                <li>Contains gluten.</li>
-              </ul>
             </div>
             <div class="box b">
-              <h3>Jalapeño Journey</h3>
-              <img src="https://3.bp.blogspot.com/-2Q1EUuvCtGw/V0cfp0I9SsI/AAAAAAAAvTQ/xoazc3L7jL4E6b2JBMndvGPJ9b_At73iQCLcB/s1600/Carls-Jr-California-Classic-Burger.jpg" alt="Span" title="Image stolen online">
-              <ul>
-                <li>Hot burger with spicy jalapeños.</li>
-                <li>Cheese, jalapeños.</li>
-                <li>Contains lactose and gluten.</li>
-              </ul>
+
             </div>
             <div class="box c">
-              <h3>Safety Burger</h3>
-              <img src="https://images-gmi-pmc.edge-generalmills.com/d657497e-4c20-4f87-bd12-4cde1502ccae.jpg" alt="Span" title="Image stolen online">
-              <ul>
-                <li>A classic cheeseburger for the tired adventurer.</li>
-                <li>Cheese, lettuce, tomatoes.</li>
-                <li>Contains lactose and gluten.</li>
-              </ul>
+
             </div>
+            <burgerbox v-for="burger in burgers"
+                       v-bind:key="burger.id"
+                       v-bind:burger="burger">
+            </burgerbox>
           </div>
         </section>
+
         <section id="contact">
           <h2>Order information:</h2>
           <div>This is where you provide necessary information for us to complete your order.</div>
           <h3>Delivery information</h3>
-          <form>
+          <form id="orderinfo">
             <p>
               <label for="fullname">Full name</label><br>
               <input type="text" id="fullname" name="name" required="required" placeholder="First and last name">
@@ -79,13 +69,17 @@
               </select>
             </p>
             <p>
-              <input type="radio" name="gender" value="female">Female<br>
-              <input type="radio" name="gender" value="male">Male<br>
-              <input type="radio" name="gender" value="no">No gender<br>
-              <input type="radio" name="gender" value="none">Do not wish to specify
+              <input type="radio" name="gender" value="Female">Female<br>
+              <input type="radio" name="gender" value="Male">Male<br>
+              <input type="radio" name="gender" value="No gender">No gender<br>
+              <input type="radio" name="gender" value="Unspecified">Do not wish to specify
             </p>
           </form>
-          <button type="submit">Submit order</button>
+          <div id="placeorder">
+            <button id="myButtonID" v-on:click="markDone()">Submit order</button>
+            <div v-if="ok == `true`">{{orderconf}}<br>{{cred}}{{info}}</div>
+            <div v-if="ok == `sortof`">{{info}}</div>
+          </div>
         </section>
         <section id="bottomheader">
           <div>
